@@ -2,7 +2,7 @@ import java.lang.Math;
 
 class exemplo13{
 	public static void main(String[] args){
-		double T = metodoNewton();
+		double T = metodoBissecao();
 		double T_celsius = T- 273.15;
 		System.out.printf("T_s = %2f K\nT_s = %2fºC\n",T,T_celsius);
 
@@ -27,7 +27,7 @@ class exemplo13{
 
 		return raiz;
 	}
-	public static  double metodoNewton(){
+	public static  double metodoBissecao(){
 		double erro = Math.pow(10,-5);
 		double n = Math.pow(10,10);
 		double a = 273.15;
